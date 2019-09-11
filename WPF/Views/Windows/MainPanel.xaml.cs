@@ -22,6 +22,15 @@ namespace WPF.Views.Windows
         public MainPanel()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
+            //ApplicationThemeManager.GetInstance().ThemeChanged += Example_ThemeChanged;
+
+        }
+
+        private void Example_ThemeChanged(object sender, System.EventArgs e)
+        {
+            this.Resources.MergedDictionaries.Clear();
+            this.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("/NavigationView;component/FirstLook/Resources.xaml", UriKind.RelativeOrAbsolute) });
         }
     }
 }

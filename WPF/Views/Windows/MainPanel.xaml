@@ -3,10 +3,42 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
         xmlns:local="clr-namespace:WPF.Views.Windows"
         mc:Ignorable="d"
         Title="MainPanel" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border Background="#070707" Padding="12 6">
+            <TextBlock Text="EXPLORE TODAY" FontSize="16" Foreground="White" FontWeight="Medium"/>
+        </Border>
+
+        <telerik:RadNavigationView x:Name="navigationView" 
+                                   Grid.Row="1"
+                                   ItemsSource="{Binding Items}"
+                                   SelectedIndex="0">
+            <telerik:RadNavigationView.Content>
+                <telerik:RadTransitionControl Content="{Binding SelectedItem, ElementName=navigationView}"
+                                              ContentTemplateSelector="{DynamicResource NavigationContentTemplateSelector}" 
+                                              Duration="0:0:0.4">
+                    <telerik:RadTransitionControl.Transition>
+                        <telerik:FadeTransition />
+                    </telerik:RadTransitionControl.Transition>
+                </telerik:RadTransitionControl>
+            </telerik:RadNavigationView.Content>
+            <telerik:RadNavigationView.PaneFooter>
+                <telerik:RadNavigationViewItem Content="Settings" 
+                                               CommandParameter="{Binding ElementName=navigationView}"
+                                               IconTemplate="{x:Null}">
+                    <telerik:RadNavigationViewItem.Icon>
+                        <telerik:RadGlyph Glyph="&#xe13a;" FontSize="20" />
+                    </telerik:RadNavigationViewItem.Icon>
+                </telerik:RadNavigationViewItem>
+            </telerik:RadNavigationView.PaneFooter>
+        </telerik:RadNavigationView>
     </Grid>
 </Window>
