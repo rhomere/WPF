@@ -30,7 +30,7 @@ namespace WPF.Views.Windows
         private void Example_ThemeChanged(object sender, System.EventArgs e)
         {
             this.Resources.MergedDictionaries.Clear();
-            this.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("/NavigationView;component/FirstLook/Resources.xaml", UriKind.RelativeOrAbsolute) });
+            this.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("/WPF;component/FirstLook/Resources.xaml", UriKind.RelativeOrAbsolute) });
         }
     }
 }
