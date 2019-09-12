@@ -15,7 +15,7 @@ namespace WPF.ViewModel
         {
             this.Items = new ObservableCollection<NavigationItemModel>();
 
-            this.Items.Add(CreateItem("Order Activity", "&#xe13e;;", string.Empty, "Images/01.png", "Images/02.png", "Images/03.png"));
+            this.Items.Add(CreateItem("Order Activity", "&#xe13e;;", "blah", "Images/01.png", "Images/02.png", "Images/03.png"));
             this.Items.Add(CreateItem("Order Queue", "&#xe024;", string.Empty, "Images/04.png", "Images/05.png", "Images/06.png"));
             this.Items.Add(CreateItem("Orders Pending", "&#xe107;", string.Empty, "Images/07.png", "Images/08.png", "Images/09.png"));
             this.Items.Add(CreateItem("Orders Sent", "&#xe809;", string.Empty, "Images/10.png", "Images/11.png", "Images/12.png"));

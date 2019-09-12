@@ -59,6 +59,14 @@
         </ScrollViewer>
     </DataTemplate>
 
+    <DataTemplate x:Key="OrderActivityContentTemplate">
+        <ScrollViewer>
+            <Grid Margin="20 20 0 0">
+                <!--TRY TO ADD ORDER ACTIVITY PAGE HERE-->                
+            </Grid>
+        </ScrollViewer>
+    </DataTemplate>
+
     <local:NavigationContentTemplateSelector x:Key="NavigationContentTemplateSelector" 
                                                        Template="{StaticResource ContentTemplate}"
                                                        TemplateAlternative="{StaticResource ContentTemplateAlternative}" />
