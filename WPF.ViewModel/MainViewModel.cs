@@ -22,7 +22,7 @@ namespace WPF.ViewModel
             this.Items.Add(CreateItem("Pending Review", "&#xe651;", string.Empty, "Images/13.png", "Images/14.png", "Images/15.png"));
             this.Items.Add(CreateItem("Non Productive", "&#xe64e;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
             this.Items.Add(CreateItem("Reports", "&#xe124;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
-            this.Items.Add(CreateItem("Admin", "&#xe801;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
+            this.Items.Add(CreateItem("Admin", "&#xe700;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
 
             this.Items.Add(CreateItem(
                 "Need To Know",

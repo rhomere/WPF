@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
         xmlns:local="clr-namespace:WPF.Views.Windows"
-        mc:Ignorable="d"
-        Title="MainPanel" Height="550" Width="800">
+        mc:Ignorable="d" 
+        Title="Solstice" Height="550" Width="800">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -20,9 +20,9 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Border Background="#070707" Padding="12 6">
-            <TextBlock Text="EXPLORE TODAY" FontSize="16" Foreground="White" FontWeight="Medium"/>
-        </Border>
+        <!--<Border Background="#070707" Padding="12 6">
+            <TextBlock Text="username" FontSize="16" Foreground="White" FontWeight="Medium" TextAlignment="Right"/>
+        </Border>-->
 
         <telerik:RadNavigationView x:Name="navigationView" 
                                    Grid.Row="1"
@@ -38,11 +38,11 @@
                 </telerik:RadTransitionControl>
             </telerik:RadNavigationView.Content>
             <telerik:RadNavigationView.PaneFooter>
-                <telerik:RadNavigationViewItem Content="Settings" 
+                <telerik:RadNavigationViewItem Content="username" 
                                                CommandParameter="{Binding ElementName=navigationView}"
                                                IconTemplate="{x:Null}">
                     <telerik:RadNavigationViewItem.Icon>
-                        <telerik:RadGlyph Glyph="&#xe13a;" FontSize="20" />
+                        <telerik:RadGlyph Glyph="&#xe801;" FontSize="20" />
                     </telerik:RadNavigationViewItem.Icon>
                 </telerik:RadNavigationViewItem>
             </telerik:RadNavigationView.PaneFooter>
