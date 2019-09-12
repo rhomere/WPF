@@ -7,6 +7,13 @@
         xmlns:local="clr-namespace:WPF.Views.Windows"
         mc:Ignorable="d"
         Title="MainPanel" Height="450" Width="800">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WPF;component/ResourcesFile.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

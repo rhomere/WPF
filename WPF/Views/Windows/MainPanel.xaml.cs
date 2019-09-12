@@ -22,7 +22,7 @@ namespace WPF.Views.Windows
         public MainPanel()
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel();
+            this.DataContext = new WPF.ViewModel.MainViewModel();
             //ApplicationThemeManager.GetInstance().ThemeChanged += Example_ThemeChanged;
 
         }

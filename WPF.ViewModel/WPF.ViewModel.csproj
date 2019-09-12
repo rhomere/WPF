@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="MainViewModel.cs" />
     <Compile Include="Interfaces\IINavigator.cs" />
-    <Compile Include="NavigationContentTemplateSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Controller.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
