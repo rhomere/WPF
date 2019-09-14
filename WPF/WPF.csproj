@@ -413,6 +413,9 @@
     </Compile>
     <Compile Include="NavigationContentTemplateSelector.cs" />
     <Compile Include="Utilities\Navigator.cs" />
+    <Compile Include="Views\UserControls\Inspections\ContentTemplateAlternative.xaml.cs">
+      <DependentUpon>ContentTemplateAlternative.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Inspections\OrderActivity.xaml.cs">
       <DependentUpon>OrderActivity.xaml</DependentUpon>
     </Compile>
@@ -439,6 +442,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ResourcesFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Inspections\ContentTemplateAlternative.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
