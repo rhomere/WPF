@@ -3,6 +3,12 @@
                     xmlns:local="clr-namespace:WPF"
                     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                     xmlns:inspections="clr-namespace:WPF.Views.UserControls.Inspections">
+
+    <local:NavigationContentTemplateSelector x:Key="NavigationContentTemplateSelector" 
+                                                       Template="{StaticResource ContentTemplate}"
+                                                       TemplateAlternative="{StaticResource ContentTemplateAlternative}" 
+                                                       OrderActivity="{StaticResource OrderActivity}"/>
+    
     <DataTemplate x:Key="ContentTemplate">
         <ScrollViewer>
             <inspections:ContentTemplate/>
@@ -20,11 +26,6 @@
             <inspections:OrderActivity/>
         </ScrollViewer>
     </DataTemplate>
-
-    <local:NavigationContentTemplateSelector x:Key="NavigationContentTemplateSelector" 
-                                                       Template="{StaticResource ContentTemplate}"
-                                                       TemplateAlternative="{StaticResource ContentTemplateAlternative}" 
-                                                       OrderActivity="{StaticResource OrderActivity}"/>
 
     <telerik:StringToGlyphConverter x:Key="StringToGlyphConverter" />
 
