@@ -13,12 +13,19 @@ namespace WPF
     {
         public DataTemplate Template { get; set; }
         public DataTemplate TemplateAlternative { get; set; }
+        public DataTemplate OrderActivity { get; set; }
 
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             if (item != null)
             {
                 NavigationItemModel model = (NavigationItemModel)item;
+
+                if (model.Title == "Order Activity")
+                {
+                    return this.OrderActivity;
+                }
+
                 if (!string.IsNullOrEmpty(model.Text))
                 {
                     return this.TemplateAlternative;
