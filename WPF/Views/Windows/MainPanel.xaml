@@ -20,10 +20,6 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <!--<Border Background="#070707" Padding="12 6">
-            <TextBlock Text="username" FontSize="16" Foreground="White" FontWeight="Medium" TextAlignment="Right"/>
-        </Border>-->
-
         <telerik:RadNavigationView x:Name="navigationView" 
                                    Grid.Row="1"
                                    ItemsSource="{Binding Items}"
