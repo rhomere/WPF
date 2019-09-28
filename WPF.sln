@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF.ViewModel", "WPF.ViewModel\WPF.ViewModel.csproj", "{A2ED5217-97B1-4332-BAE5-67E43DE45C5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileMenu", "..\WpfExamples\CollectionViews\FileMenu.csproj", "{1CA14294-916E-4D19-91AF-EDED38C62217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HierachalTree", "..\WpfExamples\WpfExamples\HierachalTree.csproj", "{D51D443F-E92D-4C18-A300-7E108BB09044}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A2ED5217-97B1-4332-BAE5-67E43DE45C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2ED5217-97B1-4332-BAE5-67E43DE45C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2ED5217-97B1-4332-BAE5-67E43DE45C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA14294-916E-4D19-91AF-EDED38C62217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA14294-916E-4D19-91AF-EDED38C62217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA14294-916E-4D19-91AF-EDED38C62217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA14294-916E-4D19-91AF-EDED38C62217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51D443F-E92D-4C18-A300-7E108BB09044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51D443F-E92D-4C18-A300-7E108BB09044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51D443F-E92D-4C18-A300-7E108BB09044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51D443F-E92D-4C18-A300-7E108BB09044}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
