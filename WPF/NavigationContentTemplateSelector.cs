@@ -21,7 +21,7 @@ namespace WPF
             {
                 NavigationItemModel model = (NavigationItemModel)item;
 
-                if (model.Title == "Order Activity")
+                if (model.Title == "Page 1")
                 {
                     return this.OrderActivity;
                 }

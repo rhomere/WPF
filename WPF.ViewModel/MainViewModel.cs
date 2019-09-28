@@ -15,14 +15,14 @@ namespace WPF.ViewModel
         {
             this.Items = new ObservableCollection<NavigationItemModel>();
 
-            this.Items.Add(CreateItem("Order Activity", "&#xe13e;;", "blah", "Images/01.png", "Images/02.png", "Images/03.png"));
-            this.Items.Add(CreateItem("Order Queue", "&#xe024;", string.Empty, "Images/04.png", "Images/05.png", "Images/06.png"));
-            this.Items.Add(CreateItem("Orders Pending", "&#xe107;", string.Empty, "Images/07.png", "Images/08.png", "Images/09.png"));
-            this.Items.Add(CreateItem("Orders Sent", "&#xe809;", string.Empty, "Images/10.png", "Images/11.png", "Images/12.png"));
-            this.Items.Add(CreateItem("Pending Review", "&#xe651;", string.Empty, "Images/13.png", "Images/14.png", "Images/15.png"));
-            this.Items.Add(CreateItem("Non Productive", "&#xe64e;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
-            this.Items.Add(CreateItem("Reports", "&#xe124;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
-            this.Items.Add(CreateItem("Admin", "&#xe700;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
+            this.Items.Add(CreateItem("Page 1", "&#xe13e;;", "blah", "Images/01.png", "Images/02.png", "Images/03.png"));
+            this.Items.Add(CreateItem("Page 2", "&#xe024;", string.Empty, "Images/04.png", "Images/05.png", "Images/06.png"));
+            this.Items.Add(CreateItem("Page 3", "&#xe107;", string.Empty, "Images/07.png", "Images/08.png", "Images/09.png"));
+            this.Items.Add(CreateItem("Page 4", "&#xe809;", string.Empty, "Images/10.png", "Images/11.png", "Images/12.png"));
+            this.Items.Add(CreateItem("Page 5", "&#xe651;", string.Empty, "Images/13.png", "Images/14.png", "Images/15.png"));
+            this.Items.Add(CreateItem("Page 6", "&#xe64e;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
+            this.Items.Add(CreateItem("Page 7", "&#xe124;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
+            this.Items.Add(CreateItem("Page 8", "&#xe700;", string.Empty, "Images/16.png", "Images/17png", "Images/18.png"));
 
             this.Items.Add(CreateItem(
                 "Need To Know",
