@@ -23,7 +23,7 @@ namespace WPF
 
                 if (model.Title == "Page 1")
                 {
-                    return this.OrderActivity;
+                    return this.Template;
                 }
 
                 if (!string.IsNullOrEmpty(model.Text))

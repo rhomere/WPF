@@ -2,28 +2,21 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:WPF"
                     xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-                    xmlns:inspections="clr-namespace:WPF.Views.UserControls.Inspections">
+                    xmlns:pages="clr-namespace:WPF.Views.UserControls.Inspections">
 
     <local:NavigationContentTemplateSelector x:Key="NavigationContentTemplateSelector" 
                                                        Template="{StaticResource ContentTemplate}"
-                                                       TemplateAlternative="{StaticResource ContentTemplateAlternative}" 
-                                                       OrderActivity="{StaticResource OrderActivity}"/>
+                                                       TemplateAlternative="{StaticResource ContentTemplateAlternative}" />
     
     <DataTemplate x:Key="ContentTemplate">
         <ScrollViewer>
-            <inspections:ContentTemplate/>
+            <pages:ContentTemplate/>
         </ScrollViewer>
     </DataTemplate>
 
     <DataTemplate x:Key="ContentTemplateAlternative">
         <ScrollViewer>
-            <inspections:ContentTemplateAlternative/>
-        </ScrollViewer>
-    </DataTemplate>
-
-    <DataTemplate x:Key="OrderActivity">
-        <ScrollViewer>
-            <inspections:OrderActivity/>
+            <pages:ContentTemplateAlternative/>
         </ScrollViewer>
     </DataTemplate>
 

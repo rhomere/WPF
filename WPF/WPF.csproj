@@ -419,9 +419,6 @@
     <Compile Include="Views\UserControls\Inspections\ContentTemplateAlternative.xaml.cs">
       <DependentUpon>ContentTemplateAlternative.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserControls\Inspections\OrderActivity.xaml.cs">
-      <DependentUpon>OrderActivity.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Windows\MainPanel.xaml.cs">
       <DependentUpon>MainPanel.xaml</DependentUpon>
     </Compile>
@@ -453,10 +450,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Inspections\ContentTemplateAlternative.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\UserControls\Inspections\OrderActivity.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
