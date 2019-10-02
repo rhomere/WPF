@@ -4,12 +4,14 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPF.ViewModel.Utilities;
 
 namespace WPF.ViewModel
 {
     public class MainViewModel
     {
         public ObservableCollection<NavigationItemModel> Items { get; set; }
+        public RelayCommand UserNameCommand { get; set; }
 
         public MainViewModel()
         {
@@ -37,6 +39,13 @@ namespace WPF.ViewModel
                 "Images/08.png",
                 "Images/09.png",
                 "Images/05.png"));
+
+            UserNameCommand = new RelayCommand(UserNameCmd);
+        }
+
+        private void UserNameCmd(object obj)
+        {
+            throw new NotImplementedException();
         }
 
         private static NavigationItemModel CreateItem(string title, string iconGlyph, string text, params string[] imagePaths)

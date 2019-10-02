@@ -6,7 +6,7 @@
         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
         xmlns:local="clr-namespace:WPF.Views.Windows"
         mc:Ignorable="d" 
-        Title="Solstice" Height="550" Width="800">
+        Title="App" Height="550" Width="800">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -35,6 +35,7 @@
             </telerik:RadNavigationView.Content>
             <telerik:RadNavigationView.PaneFooter>
                 <telerik:RadNavigationViewItem Content="username" 
+                                               Command="{Binding UserNameCommand}"
                                                CommandParameter="{Binding ElementName=navigationView}"
                                                IconTemplate="{x:Null}">
                     <telerik:RadNavigationViewItem.Icon>
