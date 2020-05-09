@@ -15,20 +15,22 @@ namespace WPF.Utilities
     {
         private MainPanel MainPanel { get; set; }
 
-        public event EventHandler MainWindowClosing;
+        //public event EventHandler MainWindowClosing;
 
         public void StartUp()
         {
-            if (MainPanel == null)
-            {
-                MainPanel = new MainPanel();
-                MainPanel.Closing += MainWindowOnClosing;
-                Application.Current.MainWindow = MainPanel;
-                Application.Current.MainWindow.LocationChanged += LocationChanged;
-                Application.Current.MainWindow.SizeChanged += LocationChanged;
-            }
+            //if (MainPanel == null)
+            //{
+            //    MainPanel = new MainPanel();
+            //    MainPanel.Closing += MainWindowOnClosing;
+            //    Application.Current.MainWindow = MainPanel;
+            //    Application.Current.MainWindow.LocationChanged += LocationChanged;
+            //    Application.Current.MainWindow.SizeChanged += LocationChanged;
+            //}
 
-            MainPanel.Show();
+            //MainPanel.Show();
+            var loadingScreen = new LoadingScreen();
+            loadingScreen.Show();
         }
 
         public void LocationChanged(object sender, EventArgs e)
@@ -44,10 +46,10 @@ namespace WPF.Utilities
             notification.ShowDialog();
         }
 
-        private void MainWindowOnClosing(object sender, CancelEventArgs cancelEventArgs)
-        {
-            MainWindowClosing?.Invoke(sender, cancelEventArgs);
-            MainWindowClosing = null;
-        }
+        //private void MainWindowOnClosing(object sender, CancelEventArgs cancelEventArgs)
+        //{
+        //    MainWindowClosing?.Invoke(sender, cancelEventArgs);
+        //    MainWindowClosing = null;
+        //}
     }
 }

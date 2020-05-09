@@ -17,32 +17,35 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition />
         </Grid.RowDefinitions>
-
-        <telerik:RadNavigationView x:Name="navigationView" 
+        <Canvas x:Name="Can">
+            <telerik:RadNavigationView x:Name="navigationView" 
                                    Grid.Row="1"
                                    ItemsSource="{Binding Items}"
                                    SelectedIndex="0">
-            <telerik:RadNavigationView.Content>
-                <telerik:RadTransitionControl Content="{Binding SelectedItem, ElementName=navigationView}"
+                <telerik:RadNavigationView.Content>
+                    <telerik:RadTransitionControl Content="{Binding SelectedItem, ElementName=navigationView}"
                                               ContentTemplateSelector="{DynamicResource NavigationContentTemplateSelector}" 
                                               Duration="0:0:0.4">
-                    <telerik:RadTransitionControl.Transition>
-                        <telerik:FadeTransition />
-                    </telerik:RadTransitionControl.Transition>
-                </telerik:RadTransitionControl>
-            </telerik:RadNavigationView.Content>
-            <telerik:RadNavigationView.PaneFooter>
-                <telerik:RadNavigationViewItem Content="username" 
+                        <telerik:RadTransitionControl.Transition>
+                            <telerik:FadeTransition />
+                        </telerik:RadTransitionControl.Transition>
+                    </telerik:RadTransitionControl>
+                </telerik:RadNavigationView.Content>
+                <telerik:RadNavigationView.PaneFooter>
+                    <telerik:RadNavigationViewItem Content="username" 
                                                Command="{Binding UserNameCommand}"
                                                CommandParameter="{Binding ElementName=navigationView}"
                                                IconTemplate="{x:Null}">
-                    <telerik:RadNavigationViewItem.Icon>
-                        <telerik:RadGlyph Glyph="&#xe801;" FontSize="20" />
-                    </telerik:RadNavigationViewItem.Icon>
-                </telerik:RadNavigationViewItem>
-            </telerik:RadNavigationView.PaneFooter>
-        </telerik:RadNavigationView>
+                        <telerik:RadNavigationViewItem.Icon>
+                            <telerik:RadGlyph Glyph="&#xe801;" FontSize="20" />
+                        </telerik:RadNavigationViewItem.Icon>
+                    </telerik:RadNavigationViewItem>
+                </telerik:RadNavigationView.PaneFooter>
+            </telerik:RadNavigationView>
+        </Canvas>
+
+        <!--<MediaElement Visibility="Visible" x:Name="Media" UnloadedBehavior="Manual" MediaEnded="MediaElement_MediaEnded" ></MediaElement>
+        <Label x:Name="Lab" Content="Loading" FontSize="90" Foreground="White" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center"></Label>-->
     </Grid>
 </Window>
