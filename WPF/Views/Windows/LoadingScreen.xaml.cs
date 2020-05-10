@@ -47,7 +47,8 @@ namespace WPF.Views.Windows
         void Loading()
         {
             Timer.Tick += Timer_Tick;
-            Timer.Interval = new TimeSpan(0, 0, 8);
+            //Timer.Interval = new TimeSpan(0, 0, 8);
+            Timer.Interval = new TimeSpan(0, 0, 2);
             Timer.Start();
         }
     }

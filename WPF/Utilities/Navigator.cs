@@ -38,10 +38,10 @@ namespace WPF.Utilities
 
         }
 
-        public void OpenNotificationWindow(string notificationText)
+        public void OpenNotificationWindow(string notificationText, int height, int width)
         {
             var notification = new Views.Windows.Notification { Topmost = true };
-            notification.DataContext = new ViewModel.WPFCommon.Notification(notificationText, notification.Close);
+            notification.DataContext = new ViewModel.WPFCommon.Notification(notificationText, notification.Close, height, width);
 
             notification.ShowDialog();
         }

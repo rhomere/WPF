@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Views.Windows"
         mc:Ignorable="d"
-        Title="Notification" Height="450" Width="800">
+        Title="Notification" Height="{Binding Path=Height, Mode=TwoWay}" Width="{Binding Path=Width, Mode=TwoWay}"
+        WindowStyle="ToolWindow">
     <Grid>
-        
+        <Label Content="{Binding NotificationText}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"></Label>
     </Grid>
 </Window>

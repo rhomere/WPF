@@ -28,7 +28,7 @@ namespace WPF.ViewModel.Utilities
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            _action(parameter);
         }
 
         public event EventHandler CanExecuteChanged;

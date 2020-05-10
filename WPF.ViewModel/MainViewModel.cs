@@ -45,7 +45,7 @@ namespace WPF.ViewModel
 
         private void UserNameCmd(object obj)
         {
-            throw new NotImplementedException();
+            Controller.Navigator.OpenNotificationWindow("This is a test notification", 200, 400);
         }
 
         private static NavigationItemModel CreateItem(string title, string iconGlyph, string text, params string[] imagePaths)

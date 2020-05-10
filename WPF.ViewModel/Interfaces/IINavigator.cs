@@ -9,6 +9,6 @@ namespace WPF.ViewModel.Interfaces
     public interface IINavigator
     {
         void StartUp();
-        void OpenNotificationWindow(string notificationText);
+        void OpenNotificationWindow(string notificationText, int height, int width);
     }
 }

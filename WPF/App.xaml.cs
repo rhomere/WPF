@@ -39,7 +39,7 @@ namespace WPF
 
             if (processes.Count > 0)
             {
-                Controller.Navigator.OpenNotificationWindow("One instance of Solstice is already running.");
+                Controller.Navigator.OpenNotificationWindow("One instance of Solstice is already running.", 200, 500);
                 return false;
             }
             return false;

@@ -6,7 +6,8 @@
         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
         xmlns:local="clr-namespace:WPF.Views.Windows"
         mc:Ignorable="d" 
-        Title="App" Height="550" Width="800">
+        Title="App" Height="550" Width="800"
+        WindowStartupLocation="CenterScreen">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
