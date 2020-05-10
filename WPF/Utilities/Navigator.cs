@@ -40,7 +40,18 @@ namespace WPF.Utilities
 
         public void OpenNotificationWindow(string notificationText, int height, int width)
         {
-            var notification = new Views.Windows.Notification { Topmost = true };
+            var notification = new Views.Windows.Notification
+            {
+                WindowStartupLocation = WindowStartupLocation.Manual,
+            };
+            // Logic to center the notification window
+            double screenWidth = System.Windows.SystemParameters.PrimaryScreenWidth;
+            double screenHeight = System.Windows.SystemParameters.PrimaryScreenHeight;
+            double windowWidth = 500;
+            double windowHeight = 500;
+            notification.Left = (screenWidth / 2) - (windowWidth / 2);
+            notification.Top = (screenHeight / 2) - (windowHeight / 2);
+
             notification.DataContext = new ViewModel.WPFCommon.Notification(notificationText, notification.Close, height, width);
 
             notification.ShowDialog();
