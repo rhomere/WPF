@@ -13,12 +13,7 @@ namespace WPF.ViewModel
     {
         public ObservableCollection<NavigationItemModel> Items { get; set; }
         public RelayCommand UserNameCommand { get; set; }
-        //public readonly DependencyProperty WindowHeightProperty = DependencyProperty.Register("WindowHeight", typeof(Double), typeof(MainViewModel), new FrameworkPropertyMetadata());
-
-        //public readonly DependencyProperty WindowWidthProperty = DependencyProperty.Register("WindowWidth", typeof(Double), typeof(MainViewModel), new FrameworkPropertyMetadata());
-
-        //public double WindowWidth { get; set; }
-        //public double WindowHeight { get; set; }
+        public RelayCommand TestCommand { get; set; }
 
         public MainViewModel()
         {
@@ -48,11 +43,17 @@ namespace WPF.ViewModel
                 "Images/05.png"));
 
             UserNameCommand = new RelayCommand(UserNameCmd);
+            TestCommand = new RelayCommand(TestCmd);
         }
 
         private void UserNameCmd(object obj)
         {
             Controller.Navigator.OpenNotificationWindow("This is a test notification", 200, 400);
+        }
+
+        private void TestCmd(object obj)
+        {
+            Controller.Navigator.OpenNotificationWindow("Test Command", 400, 600);
         }
 
         private static NavigationItemModel CreateItem(string title, string iconGlyph, string text, params string[] imagePaths)
