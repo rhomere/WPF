@@ -11,6 +11,7 @@ namespace WPF.ViewModel
 {
     public class MainViewModel
     {
+        public bool _newFeatures { get; set; }
         public ObservableCollection<NavigationItemModel> Items { get; set; }
         public RelayCommand UserNameCommand { get; set; }
         public RelayCommand TestCommand { get; set; }
@@ -44,6 +45,13 @@ namespace WPF.ViewModel
 
             UserNameCommand = new RelayCommand(UserNameCmd);
             TestCommand = new RelayCommand(TestCmd);
+
+            _newFeatures = true;
+
+            if (_newFeatures)
+            {
+                Controller.Navigator.OpenNotificationWindow("What's New", 600, 500);
+            }
         }
 
         private void UserNameCmd(object obj)
