@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
         xmlns:local="clr-namespace:WPF.Views.Windows"
+        x:Name="MainWindow"
         mc:Ignorable="d" 
-        Title="App" Height="550" Width="800"
-        WindowStartupLocation="CenterScreen">
+        Title="App" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        SizeChanged="MainWindow_SizeChanged" Background="DarkGray">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

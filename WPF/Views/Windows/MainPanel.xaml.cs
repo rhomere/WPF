@@ -37,6 +37,39 @@ namespace WPF.Views.Windows
             this.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("/WPF;component/FirstLook/Resources.xaml", UriKind.RelativeOrAbsolute) });
         }
 
+        private void MainWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (MainWindow.WindowState != WindowState.Maximized)
+            {
+                navigationView.Width = MainWindow.Width;
+                navigationView.Height = MainWindow.Height - 39;
+            }
+            else
+            {
+                //if (SystemParameters.WorkArea.Left > 0)
+                //{
+                //    // TaskBar left
+                //    return;
+                //}
+                //else if (SystemParameters.WorkArea.Top > 0)
+                //{
+                //    // TaskBar top
+                //    return;
+                //}
+                //else if (SystemParameters.WorkArea.Left == 0 && SystemParameters.WorkArea.Width < SystemParameters.PrimaryScreenWidth)
+                //{
+                //    // Task bar right
+                //    navigationView.Width = System.Windows.SystemParameters.PrimaryScreenWidth;
+                //    navigationView.Height = System.Windows.SystemParameters.PrimaryScreenHeight - 20;
+                //    return;
+                //}
+
+                // Task bar bottom
+                navigationView.Width = System.Windows.SystemParameters.PrimaryScreenWidth;
+                navigationView.Height = System.Windows.SystemParameters.PrimaryScreenHeight - 60;
+            }
+        }
+
         //private void MediaElement_MediaEnded(object sender, RoutedEventArgs e)
         //{
         //    Media.Position = new TimeSpan(0, 0, 1);

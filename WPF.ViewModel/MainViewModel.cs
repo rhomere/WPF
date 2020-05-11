@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using WPF.ViewModel.Utilities;
 
 namespace WPF.ViewModel
@@ -12,6 +13,12 @@ namespace WPF.ViewModel
     {
         public ObservableCollection<NavigationItemModel> Items { get; set; }
         public RelayCommand UserNameCommand { get; set; }
+        //public readonly DependencyProperty WindowHeightProperty = DependencyProperty.Register("WindowHeight", typeof(Double), typeof(MainViewModel), new FrameworkPropertyMetadata());
+
+        //public readonly DependencyProperty WindowWidthProperty = DependencyProperty.Register("WindowWidth", typeof(Double), typeof(MainViewModel), new FrameworkPropertyMetadata());
+
+        //public double WindowWidth { get; set; }
+        //public double WindowHeight { get; set; }
 
         public MainViewModel()
         {
