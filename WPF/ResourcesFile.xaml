@@ -24,6 +24,7 @@
 
     <Style TargetType="telerik:RadNavigationViewItem">
         <Setter Property="Content" Value="{Binding Title}" />
+        <Setter Property="ToolTip" Value="{Binding Title}" />
         <Setter Property="Icon" Value="{Binding IconGlyph}" />
         <Setter Property="IconTemplate">
             <Setter.Value>
